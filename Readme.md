@@ -18,7 +18,7 @@ Our main application code goes into standard .c files, usually in their own subd
 
 ## Device tree 
 
-Since we are using the Maker Pi Pico board, which does not have dedicated board support yet, we must define the board layout ourself in a **device tree overlay**. For more information on the device tree you can consult the [official devicetree standard](https://www.devicetree.org) or have a look at the [Zephyr documatation](https://docs.zephyrproject.org/latest/build/dts/index.html) detailing how the device tree is used for configuring Zephyr applications. 
+Since we are using the Maker Pi Pico board, which does not have dedicated board support yet, we must define the board layout ourself in a **device tree overlay**. For more information on the device tree you can consult the [official devicetree standard](https://www.devicetree.org) or have a look at the [Zephyr documentation](https://docs.zephyrproject.org/latest/build/dts/index.html) detailing how the device tree is used for configuring Zephyr applications. 
 
 For this simple application we only need to add a simple LED node into the device tree.
 
