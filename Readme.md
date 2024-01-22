@@ -10,7 +10,7 @@ A typical Zephyr application has 3 parts:
 - src/main.c 
 - prj.conf 
 
-In the CMakeLists.txt file we instruct the build system on how to construct our application. It is similar to what you have already seen during when building applications with the Pico C/C++ SDK. 
+In the CMakeLists.txt file we instruct the build system on how to construct our application. It is similar to what you have already seen when building applications with the Pico C/C++ SDK. 
 
 In prj.conf we can define different configuration variables, which determine which parts of the Zephyr operating system will be available to us. 
 
