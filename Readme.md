@@ -22,18 +22,29 @@ Since we are using the Maker Pi Pico board, which does not have dedicated board 
 
 For this simple application we only need to add a simple LED node into the device tree.
 
+
 ## Building 
 
+We assume you have `west` and Zephyr installed, which can be done following the [Zephyr getting started tutorial](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
 To build the application you can issue the following command on a terminal: 
 
 ```bash 
 west build 
 ```
 
-In case you get an error saying that `build` is not one of the availabel commands, you might miss some environment variables. You can always load those into the current session in the following way: 
+In case you get an error saying that `build` is not one of the available commands, you might miss some environment variables. You can always load those into the current session in the following way: 
 
 ```bash 
 source ZEPHYR_PROJECT_DIR/zephyr/zephyr-env.sh 
 ``` 
 
-where `ZEPHYR_PROJECT_DIR` is the directory of where you installed the Zephyr operating system. 
+where `ZEPHYR_PROJECT_DIR` is the directory of where you installed the Zephyr operating system.
+If successful, building will create a `build` folder where the application binary is in `build/zephyr/zephyr.uf2`.
+
+## Loading
+
+Loading the application onto the device can be done by connecting to the device via USB, with Bootsel pressed, then running:
+
+```bash
+picotool load build/zephyr/zephyr.uf2 
+```
