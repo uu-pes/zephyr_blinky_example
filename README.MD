@@ -62,5 +62,6 @@ This will require updating the overlay.
 **No alias.** Update the application so that it refers to the LED node without using aliases.
 You might check the [node identifier section](https://docs.zephyrproject.org/latest/build/dts/api-usage.html#node-identifiers) on the Zephyr website.
 
-**Full DTS.** We only have provided an overlay. This overlay and other other DTSes, including the one for RP20240 uC, are combined into one big DTS in `build/zephyr/zephyr.dts`.
-Are you able to find your overlay nodes in this big DTS?
+**Full DTS.** We only have provided an overlay.
+This overlay and other other DTSes, including the one for RP20240 uC (found in `${ZEPHYR_BASE}/boards/raspberrypi/rpi_pico/rpi_pico.dts`), are combined into one big DTS in `build/zephyr/zephyr.dts`.
+Are you able to find the nodes from the overlay in this big DTS?
