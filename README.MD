@@ -66,6 +66,6 @@ You might check the [node identifier section](https://docs.zephyrproject.org/lat
 
 *Inspect full DTS.* 
 We only have provided an overlay.
-This overlay and other other DTSes, including the one for RP20240 uC (found in `${ZEPHYR_BASE}/boards/raspberrypi/rpi_pico/rpi_pico.dts`), 
-are combined into one big DTS (found in `build/zephyr/zephyr.dts`).
+This overlay and other DTSes, including the one for RP20240 uC (located in `${ZEPHYR_BASE}/boards/raspberrypi/rpi_pico/rpi_pico.dts`), 
+are combined into one big DTS (located in `build/zephyr/zephyr.dts`).
 Are you able to find the nodes from the overlay in this big DTS?
