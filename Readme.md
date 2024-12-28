@@ -44,10 +44,23 @@ source ZEPHYR_PROJECT_DIR/zephyr/zephyr-env.sh
 where `ZEPHYR_PROJECT_DIR` is the directory of where you installed the Zephyr operating system.
 Once successful, building will create a `build` folder where the application binary is in `build/zephyr/zephyr.uf2`.
 
-## Loading
+## Loading and running
 
 Loading the application onto the device can be done by connecting to the device via USB with Bootsel pressed, and then running:
 
 ```bash
 picotool load build/zephyr/zephyr.uf2 
 ```
+
+Press the run button!
+
+## Some things to try/explore
+
+**Second task.** Define a second task which flashes LED at GP1.
+This will require updating the overlay.
+
+**No alias.** Update the application so that it refers to the LED node without using aliases.
+You might check the [node identifier section](https://docs.zephyrproject.org/latest/build/dts/api-usage.html#node-identifiers) on the Zephyr website.
+
+**Full DTS.** We only have provided an overlay. This overlay and other other DTSes, including the one for RP20240 uC, are combined into one big DTS in `build/zephyr/zephyr.dts`.
+Are you able to find your overlay nodes in this big DTS?
